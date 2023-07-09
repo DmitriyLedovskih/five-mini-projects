@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>Слайдер | Проект 3</title>
+</head>
+
+<body class="page">
+  <div class="container">
+    <aside class="sidebar">
+      <div style="
+            background: linear-gradient(229.99deg, #d80066 -26%, #8001ff 145%);
+          " class="sidebar__col">
+        <h2 class="sidebar__col-title">Заголовок 4</h2>
+        <p class="sidebar__col-descr">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div style="
+            background: linear-gradient(215.32deg, #9037ad -1%, #02c6d7 124%);
+          " class="sidebar__col">
+        <h2 class="sidebar__col-title">Заголовок 3</h2>
+        <p class="sidebar__col-descr">Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+      <div style="
+            background: linear-gradient(220.16deg, #FFC107 -8%, #ffe500 138%);
+          " class="sidebar__col">
+        <h2 class="sidebar__col-title">Заголовок 2</h2>
+        <p class="sidebar__col-descr">Lorem ipsum dolor sit.</p>
+      </div>
+      <div style="
+            background: linear-gradient(220.16deg, #000022 -8%, #1820a0 138%);
+          " class="sidebar__col">
+        <h2 class="sidebar__col-title">Заголовок 1</h2>
+        <p class="sidebar__col-descr">Lorem, ipsum.</p>
+      </div>
+    </aside>
+    <div class="slider">
+      <div style="
+            background-image: url('https://images.unsplash.com/photo-1585620385456-4759f9b5c7d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+          " class="slider__slide"></div>
+      <div style="
+            background-image: url('https://images.unsplash.com/photo-1580327344181-c1163234e5a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1167&q=80');
+          " class="slider__slide"></div>
+      <div style="
+            background-image: url('https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80');
+          " class="slider__slide"></div>
+      <div style="
+            background-image: url('https://images.unsplash.com/photo-1586182987320-4f376d39d787?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');
+          " class="slider__slide"></div>
+    </div>
+    <div class="controls">
+      <button class="controls__button controls__button_type_down">
+        <svg class="controls__button-icon" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+          <path d="M480-160 160-480l42-42 248 248v-526h60v526l248-248 42 42-320 320Z" />
+        </svg>
+      </button>
+      <button class="controls__button controls__button_type_up">
+        <svg class="controls__button-icon" xmlns="http://www.w3.org/2000/svg" height="48"
+          viewBox="0 -960 960 960" width="48">
+          <path d="M450-160v-526L202-438l-42-42 320-320 320 320-42 42-248-248v526h-60Z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>

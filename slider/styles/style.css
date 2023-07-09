@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+.page {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  width: 35%;
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sidebar__col {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.sidebar__col-title {
+  font-size: 40px;
+  line-height: 42px;
+  margin: 0 0 10px;
+}
+
+.sidebar__col-descr {
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.slider {
+  height: 100%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  left: 35%;
+  top: 0;
+}
+
+.slider__slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.controls {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.controls__button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+  outline: none;
+  border-left: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls__button_type_down {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.controls__button_type_up {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.controls__button:first-of-type {
+  border-left: none;
+}
+
+.controls__button-icon {
+  width: 20px;
+  height: 20px;
+  transition: all .4s ease-in-out;
+}
+
+.controls__button:hover .controls__button-icon {
+  fill: #574444;
+}
+
+@media screen and (max-width: 1160px) {
+  .sidebar__col-title {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .sidebar__col-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .slider {
+    width: 100%;
+    left: 0;
+    opacity: 0.1;
+  }
+}
